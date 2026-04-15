@@ -1,1 +1,139 @@
-/*  your css code here. If applicable */
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Task</title>
+    <style>
+        table {
+            border: 1px solid orange;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid orange;
+            text-align: center;
+            padding: 3px 5px;
+        }
+        th {
+            background-color: #888888;
+            color: white;
+        }
+        .sub-total-text {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Firm</th>
+            <th>Org</th>
+            <th>Lob</th>
+            <th>Sub Lob</th>
+            <th>Business Plans</th>
+            <th>Business Components</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Row 1 -->
+        <tr>
+            <td rowspan="11">XYZ</td>
+            <td rowspan="5">CST</td>
+            <td rowspan="3">CT</td>
+            <td>ADS</td>
+            <td>1</td>
+            <td>10</td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td>BDS</td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+
+        <!-- Row 3 -->
+        <tr>
+            <td>CDS</td>
+            <td>3</td>
+            <td>30</td>
+        </tr>
+
+        <!-- Row 4 -->
+        <tr>
+            <td rowspan="2">BT</td>
+            <td>ADS</td>
+            <td>4</td>
+            <td>40</td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+            <td>BDS</td>
+            <td>5</td>
+            <td>50</td>
+        </tr>
+
+        <!-- Row 6 (Sub Total Row) -->
+        <tr>
+            <td colspan="3" class="sub-total-text">Sub Total</td>
+            <td>6</td>
+            <td>15</td>
+        </tr>
+
+        <!-- Row 7 -->
+        <tr>
+            <td rowspan="3">AST</td>
+            <td rowspan="2">ET</td>
+            <td>ADS</td>
+            <td>7</td>
+            <td>70</td>
+        </tr>
+
+        <!-- Row 8 -->
+        <tr>
+            <td>BDS</td>
+            <td>8</td>
+            <td>80</td>
+        </tr>
+
+        <!-- Row 9 -->
+        <tr>
+            <td>FT</td>
+            <td>CDS</td>
+            <td>9</td>
+            <td>90</td>
+        </tr>
+
+        <!-- Row 10 -->
+        <tr>
+            <td>BST</td>
+            <td>GT</td>
+            <td>ADS</td>
+            <td>10</td>
+            <td>100</td>
+        </tr>
+
+        <!-- Row 11 -->
+        <tr>
+            <td>CST</td>
+            <td>HT</td>
+            <td>BDS</td>
+            <td>11</td>
+            <td>110</td>
+        </tr>
+
+        <!-- Row 12 -->
+        <tr>
+            <td>DST</td>
+            <td>IT</td>
+            <td>CDS</td>
+            <td>12</td>
+            <td>120</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>
